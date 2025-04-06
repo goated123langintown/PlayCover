@@ -103,7 +103,6 @@ class Installer {
                 if !export {
                     // -rwxr-xr-x
                     try app.executable.setBinaryPosixPermissions(0o755)
-                    try removeMobileProvision(app)
                 }
 
                 let info = app.info
